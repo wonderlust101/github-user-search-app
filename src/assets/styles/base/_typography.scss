@@ -1,6 +1,27 @@
 @use '../abstract/index' as a;
 
 h1, h2, h3, h4,
-h5, h6, p {
+h5, h6, p, a, button, input {
+  font-family: 'Space Mono', monospace;
+}
 
+h1 {
+  font-size: 1.625rem;
+}
+
+h2 {
+  font-size: 1rem;
+  
+  @include a.breakpoint(medium) {
+    font-size: 1.625rem;
+  }
+}
+
+h3 {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  
+  @include a.breakpoint(medium) {
+    font-size: 0.8125rem;
+  }
 }

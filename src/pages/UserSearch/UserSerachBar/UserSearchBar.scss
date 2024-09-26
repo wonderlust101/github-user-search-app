@@ -1,0 +1,29 @@
+.user-search-bar {
+  grid-area: 1/2;
+  
+  &__form {
+    position: relative;
+  }
+  
+  &__button {
+    position: absolute;
+    right: 0.35rem;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  
+  &__text-input {
+    width: 100%;
+    padding-left: 5rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  
+  &__text-input__icon {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translate(0, -50%);
+    z-index: 1;
+  }
+}

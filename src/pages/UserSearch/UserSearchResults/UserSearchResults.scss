@@ -1,0 +1,141 @@
+//@use '/src/assets/styles/abstract' as a;
+
+.user-search-results {
+  grid-area: 2/2;
+  display: grid;
+  grid-template: max-content max-content / max-content 1fr;
+  align-items: center;
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+  position: relative;
+  padding: 2rem 1.5rem;
+  background-color: lightgrey;
+  border-radius: 0.9375rem;
+
+  @include breakpoint(medium) {
+    grid-template: max-content max-content / max-content 1fr;
+    padding: 3rem;
+    column-gap: 2.5rem;
+  }
+
+  &__img {
+    grid-area: 1/1;
+    width: 4.375rem;
+    border-radius: 4.375rem;
+
+    @include breakpoint(medium) {
+      align-self: flex-start;
+      grid-area: 1/1 / 3/1;
+      width: 7.3125rem;
+    }
+  }
+
+  &__profile {
+    grid-area: 1/2;
+    display: grid;
+    align-items: center;
+    gap: 0.25rem;
+
+    @include breakpoint(medium) {
+      grid-template: 1fr 1fr / 1fr 1fr;
+    }
+  }
+
+  &__name {
+    @include breakpoint(medium) {
+      grid-area: 1/1;
+    }
+  }
+
+  &__login {
+    @include breakpoint(medium) {
+      grid-area: 2/1;
+    }
+  }
+
+  &__created {
+    font-size: 0.8125rem;
+    
+    @include breakpoint(medium) {
+      justify-self: flex-end;
+      grid-area: 1/2;
+      font-size: 0.9375rem;
+    }
+  }
+  
+  &__bio {
+    font-size: 0.8125rem;
+
+    @include breakpoint(medium) {
+      font-size: 0.9375rem;
+    }
+  }
+
+  &__details {
+    grid-area: 2/1 / 2/3;
+    display: grid;
+    gap: 1.5rem;
+
+    @include breakpoint(medium) {
+      grid-area: 2/2 / 2/3;
+    }
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.15rem 1rem;
+    background-color: grey;
+    border-radius: 0.625rem;
+
+    @include breakpoint(medium) {
+      justify-items: flex-start;
+    }
+
+    & > * {
+      display: grid;
+      justify-items: center;
+      gap: 0.5rem;
+
+      @include breakpoint(medium) {
+        justify-items: flex-start;
+      }
+    }
+  }
+  
+  &__stat-number {
+    font-weight: 700;
+    font-size: 1rem;
+    
+    @include breakpoint(medium) {
+      font-size: 1.375rem;
+    }
+  }
+
+  &__more-details {
+    display: grid;
+    gap: 1rem;
+
+    @include breakpoint(medium) {
+      grid-template: 1fr 1fr / 1fr 1fr;
+      grid-auto-flow: column;
+    }
+
+    &--absent {
+      opacity: 0.5;
+    }
+
+    & > * {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8125rem;
+
+      @include breakpoint(medium) {
+        font-size: 0.9375rem;
+      }
+    }
+  }
+}

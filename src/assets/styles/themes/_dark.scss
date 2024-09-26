@@ -1,0 +1,65 @@
+@use '../abstract/index' as a;
+
+.dark {
+  background-color: a.$clr-dark-desaturated-blue-900;
+
+  .header {
+    &__header{
+      color: a.$clr-dark-white-500;
+    }
+
+    &__theme-switch {
+      color: a.$clr-dark-white-500;
+    }
+  }
+
+  .user-search-bar {
+    &__text-input {
+      color: a.$clr-dark-white-500;
+      background-color: a.$clr-dark-desaturated-blue-800;
+      caret-color: a.$clr-dark-blue-500;
+
+      &::placeholder {
+        color: a.$clr-dark-white-500;
+        opacity: 1;
+      }
+    }
+  }
+
+  .user-search-results {
+    background-color: a.$clr-dark-desaturated-blue-800;
+
+    &__name {
+      color: a.$clr-dark-white-500;
+    }
+
+    &__login {
+      color: a.$clr-light-blue-500;
+    }
+
+    &__created {
+      color: a.$clr-dark-white-500;
+    }
+    
+    &__bio {
+      color: a.$clr-dark-white-500;
+      opacity: 0.75;
+    }
+
+    &__stats {
+      background-color: a.$clr-dark-desaturated-blue-900;
+    }
+
+    &__stat-header {
+      color: a.$clr-dark-white-500;
+    }
+
+    &__stat-number {
+      color: a.$clr-dark-white-500;
+    }
+
+    &__more-details {
+      color: a.$clr-dark-white-500;
+    }
+  }
+}

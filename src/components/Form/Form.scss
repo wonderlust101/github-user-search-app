@@ -1,0 +1,9 @@
+.form {
+  display: grid;
+  
+  &__fieldset {
+    display: grid;
+    width: 100%;
+    border: none;
+  }
+}

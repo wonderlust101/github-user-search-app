@@ -1,0 +1,58 @@
+@use '../abstract/index' as a;
+
+.light {
+  background-color: a.$clr-light-grey-500;
+  
+  .header {
+    &__header{
+      color: a.$clr-light-black-500;
+    }
+    
+    &__theme-switch {
+      color: a.$clr-light-desaturated-blue-300;
+    }
+  }
+  
+  .user-search-bar {
+    &__text-input {
+      background-color: a.$clr-light-white-500;
+      caret-color: a.$clr-dark-blue-500;
+
+      &::placeholder {
+        color: a.$clr-light-desaturated-blue-500;
+      }
+    }
+  }
+  
+  .user-search-results {
+    background-color: a.$clr-light-white-500;
+    
+    &__name {
+      color: a.$clr-light-desaturated-blue-900;
+    }
+
+    &__login {
+      color: a.$clr-light-blue-500;
+    }
+
+    &__created {
+      color: a.$clr-light-desaturated-blue-300;
+    }
+
+    &__stats {
+      background-color: a.$clr-light-grey-500;
+    }
+    
+    &__stat-header {
+      color: a.$clr-light-desaturated-blue-500;
+    }
+
+    &__stat-number {
+      color: a.$clr-light-desaturated-blue-900;
+    }
+    
+    &__more-details {
+      color: a.$clr-light-desaturated-blue-500;
+    }
+  }
+}

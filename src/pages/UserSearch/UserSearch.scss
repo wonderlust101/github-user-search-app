@@ -1,0 +1,14 @@
+@use  '/src/assets/styles/abstract' as a;
+
+.user-search {
+  height: 100vh;
+  
+  @include a.breakpoint(medium) {
+    display: grid;
+    align-content: center;
+  }
+
+  &__content {
+    gap: 1.5rem;
+  }
+}

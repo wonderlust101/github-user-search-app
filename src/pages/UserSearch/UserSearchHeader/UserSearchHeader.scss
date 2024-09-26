@@ -1,0 +1,16 @@
+.header {
+  grid-area: 1/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 2.25rem;
+  
+  &__theme-switch {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.15625rem;
+    text-transform: uppercase;
+  }
+}
