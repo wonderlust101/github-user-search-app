@@ -14,6 +14,8 @@
   }
   
   .user-search-bar {
+    box-shadow: a.$clr-box-shadow;
+    
     &__text-input {
       background-color: a.$clr-light-white-500;
       caret-color: a.$clr-dark-blue-500;
@@ -26,6 +28,7 @@
   
   .user-search-results {
     background-color: a.$clr-light-white-500;
+    box-shadow: a.$clr-box-shadow;
     
     &__name {
       color: a.$clr-light-desaturated-blue-900;
